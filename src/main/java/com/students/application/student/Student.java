@@ -12,7 +12,7 @@ public class Student {
 	private String name;
 	private int marks;
 	
-	public Student() {
+	protected Student() {
 		super();
 	}
 
@@ -40,5 +40,11 @@ public class Student {
 	public void setmarks(int marks) {
 		this.marks = marks;
 	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
+	}
+	
 		
 }
